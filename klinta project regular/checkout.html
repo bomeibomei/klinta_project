@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>訂單</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/checkout.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+
+                    <!-- 漢堡堡 -->
+                    <ul class="menu__box">
+                        <li><a class="menu__item" href="aboutus.html">關於我們</a></li>
+                        <li><a class="menu__item" href="candle1.html">香氛工藝蠟燭</a></li>
+                        <li><a class="menu__item" href="candletwo.html">相關商品</a></li>
+                        <li><a class="menu__item" href="contact.html">購物須知</a></li>
+                    </ul>
+                </div>
+
+                <a href="./index.html" class="logo"><img class="logo_picture" src="./logo/資產 1-100.jpg"
+                        alt="圖片未正常出現會出現的文字"></a>
+
+
+                <ul class="nav_tops">
+                    <li class="nav_li about_us"><a href="aboutus.html">關於我們</a></li>
+                    <li class="nav_li aboutcandle"><a href="candle1.html">香氛工藝蠟燭</a></li>
+                    <li class="nav_li related_product"><a href="candletwo.html">相關商品</a></li>
+                    <li class="nav_li buy_note"><a href="contact.html">購物須知</a></li>
+                    <!-- <li class="nav_li buying_bag"><a href="shipping.html">購物車</a></li>
+                    <li class="nav_li contact_us"><a href="#"></a>會員登入</a></li> -->
+                    <li class="nav_li navright">
+                        <div class="navright">
+                            <a href="wishlist.html"><i id="fa-heart" class="fas fa-heart"></i></a>
+                            <a href="login.html"><i id="fa-user-alt" class="fas fa-user-alt"></i></a>
+                            <a href="shippinglist.html"><i id="fa-cart-plus" class="fas fa-cart-plus"></i></a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="shopping_status">
+        <p class="shipping_status">Shopping & Billing info</p>
+        <ol class="list">
+            <div class="shipping_circle">
+                <li class="list">step1 確認清單及選擇付款方式</li>
+                <li class="list" id="received">step2 填寫訂購資料</li>
+                <li class="list">step3 購物完成</li>
+            </div>
+        </ol>
+    </div>
+    <section class="order_form">
+        <div class="order_choice_div">
+            <form class="order_choice">
+                <div class="order_header">
+                    <h3>1.訂購人資訊</h3>
+                </div>
+                <div class="checkout_btn">
+                    <div class="shipping_form">
+                        <div class="form_group">
+                            <div class="order_header">
+                                <label>收件者姓名</label>
+                                <div class="name">
+                                    <input type="text" name="" id="user_id" placeholder="請輸入姓名" autocomplete="off"
+                                        name="account">
+                                </div>
+                            </div>
+                            <div class="phone_detail">
+                                <label>手機號碼</label>
+                                <div class="select_phone">
+                                    <span class="select_cart_form">
+                                        <select class="form_control">
+                                            <option class="tw">阿布達比(+49)</option>
+                                            <option class="kr">韓國(+082)</option>
+                                            <option class="ab">台灣(+886)</option>
+                                            <option class="la">洛杉磯(+1)</option>
+                                            <option class="sf">舊金山(+1)</option>
+                                            <option class="jp">日本(+81)</option>
+                                        </select>
+                                    </span>
+                                    <div class="phone_number">
+                                        <input type="text" name="" id="user_id" placeholder="請輸入手機號碼" autocomplete="off"
+                                            name="account">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="places">
+                            <label>地址</label>
+                            <div class="form_group">
+                                <span class="select_cart_form">
+                                    <select class="form_control">
+                                        <option class="tw">台北市</option>
+                                        <option class="kr">新北市</option>
+                                        <option class="ab">基隆區</option>
+                                        <option class="la">桃園區</option>
+                                    </select>
+                                </span>
+                            </div>
+                            <div class="form_group">
+                                <span class="select_cart_form">
+                                    <select class="form_control">
+                                        <option class="tw">100中正區</option>
+                                        <option class="kr">106大安區</option>
+                                        <option class="ab">114大安區</option>
+                                        <option class="la">105松山區</option>
+                                    </select>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="order_address">
+                            <input type="text" name="" id="user_id" placeholder="請輸入地址" autocomplete="off"
+                                name="account">
+                        </div>
+                        <div class="order_email">
+                            <label>Email</label>
+                            <div class="email_address">
+                                <input type="text" name="" id="user_id" placeholder="請輸入email" autocomplete="off"
+                                    name="account">
+                            </div>
+                            <h3>2.收件人資訊</h3>
+                            <div class="order_header">
+                                <label>收件者姓名</label>
+                                <div class="name">
+                                    <input type="text" name="" id="user_id" placeholder="請輸入姓名" autocomplete="off"
+                                        name="account">
+                                </div>
+                            </div>
+                            <div class="form_group">
+                                <label>地址</label>
+                                <div class="form_group">
+                                    <span class="select_cart_form">
+                                        <select class="form_control">
+                                            <option class="tw">台北市</option>
+                                            <option class="kr">新北市</option>
+                                            <option class="ab">基隆區</option>
+                                            <option class="la">桃園區</option>
+                                        </select>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="form_group">
+                                <span class="select_cart_form">
+                                    <select class="form_control">
+                                        <option class="tw">100中正區</option>
+                                        <option class="kr">106大安區</option>
+                                        <option class="ab">114大安區</option>
+                                        <option class="la">105松山區</option>
+                                    </select>
+                                </span>
+                            </div>
+                            <div class="order_address">
+                                <input type="text" name="" id="user_id" placeholder="請輸入地址" autocomplete="off"
+                                    name="account">
+                            </div>
+                            <h3>3.配送資訊</h3>
+                            <div class="form_group">
+                                <label>發票</label>
+                                <div class="ticket">
+                                    <span class="select_cart_form">
+                                        <select class="form_control">
+                                            <label class="ticket">發票</label>
+                                            <option class="tw">電子發票</option>
+                                            <option class="kr">捐贈發票</option>
+                                            <option class="ab">統編(公司戶)發票</option>
+                                        </select>
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="ticket_mail">核准文號：北區國稅北縣三字第1000002660號
+                                ※依統一發票使用辦法規定：發票一經開立不得任意更改或改開發票。</span>
+                            <div class="normal_checkbox">
+                                <input type="checkbox" id="original_checkbox">
+                                <label class="policy">我同意接受服務條款與隱私權政策</label>
+                            </div>
+                            <span class="remind">※下單前請再次確認您的購買明細及配送資訊，訂單成立後無法異動訂單內容
+                                ←修改付款方式</span>
+            </form>
+            <div class="btn-confirm">
+                <div class="confirm_btn">
+                    <button class="modify_btn">←修改付款方式</button>
+                    <button class="confirm_btn">完成訂購</button>
+                </div>
+            </div>
+
+    </section>
+    <a href="#" id="go_top"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
+    <footer class="foot">
+        <div class="footer_slogan">
+            Hello!
+            <span>A little more Klinta</span>
+        </div>
+        <div class="footer_menu">
+            <ul>
+                <li class="foot_about">
+                    <a href="#">
+                        <img src="http://s.azurecdns.com/sff/pazzo/static/img/about.svg" class="footer_image">
+                        <span class="translate_tw">關於我們</span>
+                        <span class="translate_en">About us</span>
+                    </a>
+                </li>
+                <li class="foot_service">
+                    <a href="#">
+                        <img src="http://s.azurecdns.com/sff/pazzo/static/img/howtobuy.svg" class="footer_image">
+                        <span class="translate_tw">如何購買</span>
+                        <span class="translate_en">How to buy</span>
+                    </a>
+                </li>
+                <li class="foot_news">
+                    <a href="#">
+                        <img src="http://s.azurecdns.com/sff/pazzo/static/img/notice.svg" class="footer_image">
+                        <span class="translate_tw">重要公告</span>
+                        <span class="translate_en">Notice</span>
+                    </a>
+                </li>
+                <li class="foot_feature">
+                    <a href="#">
+                        <img src="http://s.azurecdns.com/sff/pazzo/static/img/feature_1.svg" class="footer_image_car">
+                        <span class="translate_tw">滿千免運</span>
+                        <span class="translate_en">Free shipping</span>
+                    </a>
+                </li>
+                <li class="foot_features">
+                    <a href="#">
+                        <img src="http://s.azurecdns.com/sff/pazzo/static/img/feature_2.svg" class="footer_image">
+                        <span class="translate_tw">可刷卡</span>
+                        <span class="translate_en">Payment</span>
+                    </a>
+                </li>
+                <li class="foot_features1">
+                    <a href="#">
+                        <img src="http://s.azurecdns.com/sff/pazzo/static/img/feature_3.svg" class="footer_image">
+                        <span class="translate_tw">超商取貨</span>
+                        <span class="translate_en">Store pickup</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_contact_me">
+            <p>聯繫電話:Calling 0800-628-628</p>
+            <p>Email:service@klinta.com.tw</p>
+            <p>客服時間:09:00-12:00 / 13:00-18:00 週一至週五</p>
+        </div>
+        <div class="social_media">
+            <div class="social_media_link">
+                <a href="#"><i class="fab fa-facebook fa-5x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-1x"></i></a>
+                <a href="#"><i class="fab fa-line fa-1x"></i></a>
+            </div>
+        </div>
+        <div class="anti_frauds">
+            <div>165 反詐騙</div>
+            <div>165 ANTI-FRAUD</div>
+        </div>
+        <div class="copyright">© COPYRIGHT KLINTA GROUP 2020</div>
+    </footer>
+    <div class="mobileicon">
+        <div class="navright">
+            <a href="wishlist.html"><i id="fa-heart" class="fas fa-heart"></i></a>
+            <a href="login.html"><i id="fa-user-alt" class="fas fa-user-alt"></i></a>
+            <a href="shippinglist.html"><i id="fa-cart-plus" class="fas fa-cart-plus"></i></a>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/lightslider.js"></script>
+    <script>// DOM 載入完成之後
+        $(function () {
+            var a_top = document.getElementById("go_top");
+            window.addEventListener("scroll", function (e) {
+                if (window.scrollY == 0) {
+                    a_top.classList.add("-up");
+                }
+                else {
+                    a_top.classList.remove("-up");
+                }
+            });
+
+            $(function () {
+
+                // 點擊按鈕，頁面滑到最上方
+                $("#go_top").on("click", function (e) {
+                    e.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: 0
+                    }, 750);
+                });
+
+            });
+
+            var autoplaySlider = $('.addition_goods_range').lightSlider({
+                auto: true,
+                loop: true,
+                control: true,
+                pauseOnHover: true,
+                slideMargin: 20,
+                adaptiveHeight: true,
+                onBeforeSlide: function (el) {
+                    $('#current').text(el.getCurrentSlideCount());
+                }
+            });
+            $('#total').text(autoplaySlider.getTotalSlideCount());
+
+
+            // 開啟 Modal 彈跳視窗
+            $("li.contact_us").on("click", function () {
+                $("div.overlay").addClass("-on");
+            });
+
+            // 關閉 Modal
+            $("button.btn_modal_close").on("click", function () {
+                $("div.overlay").addClass("-opacity-zero");
+
+                // 設定隔一秒後，移除相關 class
+                setTimeout(function () {
+                    $("div.overlay").removeClass("-on -opacity-zero");
+                }, 1000);
+            });
+
+        });
+
+
+        function show_hide() {
+            var login = document.getElementById("container1");
+            var signup = document.getElementById("container2");
+            var copyright = document.getElementById("copyright");
+
+            if (login.style.display === "none") {
+                login.style.display = "block";  //lonin出現
+                document.getElementById("username").value = "";
+                document.getElementById("password").value = "";
+                signup.style.display = "none";  //signup消失
+                copyright.style.margin = "200px 0px 0px 0px";
+            } else {
+                login.style.display = "none";   //login消失
+                signup.style.display = "block"; //signup出現
+                signup.style.visibility = "visible";
+                copyright.style.margin = "200px 0px 0px 0px";
+
+                document.getElementById("fullname").value = "";
+                document.getElementById("username2").value = "";
+                document.getElementById("password2").value = "";
+                document.getElementById("comfirm_password").value = "";
+            }
+        }
+
+        $(function () {
+            // This button will increment the value
+            $('.qtyplus').click(function (e) {
+                // Stop acting like a button
+                e.preventDefault();
+                // Get the field name
+                fieldName = $(this).attr('field');
+                // Get its current value
+                var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+                // If is not undefined
+                if (!isNaN(currentVal)) {
+                    // Increment
+                    $('input[name=' + fieldName + ']').val(currentVal + 1);
+                } else {
+                    // Otherwise put a 0 there
+                    $('input[name=' + fieldName + ']').val(0);
+                }
+            });
+            // This button will decrement the value till 0
+            $(".qtyminus").click(function (e) {
+                // Stop acting like a button
+                e.preventDefault();
+                // Get the field name
+                fieldName = $(this).attr('field');
+                // Get its current value
+                var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+                // If it isn't undefined or its greater than 0
+                if (!isNaN(currentVal) && currentVal > 0) {
+                    // Decrement one
+                    $('input[name=' + fieldName + ']').val(currentVal - 1);
+                } else {
+                    // Otherwise put a 0 there
+                    $('input[name=' + fieldName + ']').val(0);
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

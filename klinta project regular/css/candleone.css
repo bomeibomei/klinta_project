@@ -1,0 +1,771 @@
+@import "../css/header.css"; 
+* { 
+    /* border: none !important; */
+}
+
+body{
+    /* background-repeat: repeat-y; */
+    font-family: "微軟正黑體";
+    background-color: #f1ece8;
+}
+
+
+div.side-menu{
+    font-size: 30px;
+    border: 13px solid rosybrown;
+    width: 10%;
+    position: fixed;
+    height: 100%;
+    left: 0px;
+    /* padding-left: 5%; */
+    text-align: center;
+    line-height: 3;
+    /* margin-top: 0px; */
+    /* top: 15px; */
+}
+
+img.slogan1{
+    /* min-width: 1200px; */
+    width: 100%;
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center center;
+    display: inline-block;
+    background-image: url(../website_pic/flowers/banner/photo-1527903789995-dc8ad2ad6de0.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+section.picture2, section.picture3{
+    border: 10px solid darkmagenta;
+    width: 50%;
+    display: inline-flex;
+    justify-content: center;
+
+}
+
+div.product_pics{
+    border: 5px solid blue;
+    display: inline-flex;
+    /* width: 100%; */
+}
+
+a.series{
+    font-size: 30px;
+}
+
+.test{
+    color: red;
+}
+
+img.candle {
+    width: 100%;
+    height: 500px;
+    /* object-fit: cover; */
+    object-position: center center;
+}
+
+section.candle_content{
+    border: 15px solid darkgoldenrod;
+    width: 100%;
+    /* min-width: 1200px; */
+    /* padding-left: 10%; */
+}
+
+div.mobileicon{
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    background-color:  #b68965;
+    display: none;
+  }
+
+  div.mobileicon div.navright a {
+    padding: 0px 50px;
+    
+
+  }
+
+  div.mobileicon div.navright{
+    display: flex;
+  }
+
+a#go_top{
+    display: block;
+    opacity: 1;
+    transition: opacity .8s;
+  }
+  
+  a#go_top.-up{
+    /* display: none; */
+    opacity: 0;
+  }
+
+  div.candleid{
+      border: 1px solid darkblue;
+      display: grid;
+      text-align: center;
+  }
+
+  span.candle_name{
+      border: 1px solid darkgoldenrod;
+      padding: 16px;
+      font-size: 1rem;
+  }
+
+  div.candle{
+      border: 2px solid fuchsia;
+      overflow: hidden;
+      transition: .3s;
+      transform: scale(1);
+      text-align: center;
+  }
+
+  div.candle:hover{
+    transform: scale(1.05);
+  }
+
+  img.goods{
+    max-width: 100%;
+    max-height: 100%;
+    /* position: absolute; */
+}
+
+div.goods_part1, div.goods_part2, div.goods_part3, div.goods_part4,
+div.goods_part5, div.goods_part6{ 
+    border: 5px solid firebrick;
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+    width: 100%;
+}
+
+section.picture1, section.picture2, section.picture3{
+    border: 10px solid darkmagenta;
+    width: 50%;
+    display: inline-flex;
+    justify-content: center;
+
+} 
+
+img.candle{
+    border: 10px solid red;
+    height: 500px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+
+
+
+
+/* 漢堡堡 */
+#menu__toggle {
+    opacity: 0;
+  }
+  
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    line-height: 3;
+    width: 26px;
+    height: 26px;
+  
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+  
+    width: 100%;
+    height: 2px;
+  
+    background-color: #616161;
+  
+    transition-duration: .25s;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    line-height: 3;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+  
+    list-style: none;
+  
+    background-color:  #eeded1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  
+    transition-duration: .25s;
+  }
+  
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+  
+    color: #333;
+  
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+  
+    text-decoration: none;
+  
+    transition-duration: .25s;
+  }
+  .menu__item:hover {
+    background-color: #cf635b;
+  }
+    /* margin-left: 850px;
+    padding: 46px;
+    margin-top: 100px;
+}*/
+
+
+@media screen and (min-width: 320px) and (max-width: 574px){
+    label.menu__btn{
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    ul.nav_tops{
+        display: none;
+    }
+
+    div.product_pics {
+        border: 5px solid blue;
+        display: inline-flex;
+        /* width: 100%; */
+    }
+
+    div.product_show{
+        border: 5px solid hotpink;
+        width: 100%;
+        text-align: center;
+        /* padding: 20px; */
+    }
+    
+    img.candle {
+        width: 250px;
+        height: 400px;
+        padding: 20px;
+    }
+
+    div.product_pic1, div.product_pic2, div.product_pic3, div.product_pic4, div.product_pic5
+    , div.product_pic6, div.product_pic7, div.product_pic8
+    , div.product_pic9, div.product_pic10, div.product_pic11, div.product_pic12
+    , div.product_pic13, div.product_pic14, div.product_pic15, div.product_pic16
+    , div.product_pic17, div.product_pic18{
+        /* border: 8px solid darkblue;
+        width: 100%; */
+        /* justify-content: center; */
+        /* width: 60px;
+        height: 160px; */
+        width: 280px;
+        /* height: 350px; */
+        overflow: hidden;
+        border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px 10px;
+    }
+
+    div.goods_part1, div.goods_part2, div.goods_part3, div.goods_part4, div.goods_part5, div.goods_part6 {
+        border: 5px solid firebrick;
+        display: grid;
+        justify-content: center;
+        padding: 3%;
+        width: 100%;
+    }
+
+    div.icon_flex {
+        border: 3px solid darkgoldenrod;
+        display: inline-flex;
+        width: 100%;
+        justify-content: inherit;
+    }
+
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+
+    label.menu__btn{
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    ul.nav_tops{
+        display: none;
+    }
+
+    a.news{
+        font-size: 16px;
+    }
+
+    
+    article.story1, article.story2, article.story3, article.story4, article.story5{
+        border: 1px solid darkgoldenrod;
+        line-height: 2;
+        /* padding: 30px; */
+        font-size: 26px;
+    }
+
+    div.story1, div.story2, div.story3, div.story4, div.story5{
+        border: 1px solid palevioletred;
+        width: 100%; 
+        /* min-width: 1200px;    */
+        margin: auto;
+        font-size: 20px;    
+        display: flex;
+        align-items: center;
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    div.story_pic1, div.story_pic2, div.story_pic3, div.story_pic4, div.story_pic5, div.story_pic6{
+        border: 5px solid yellowgreen;
+        /* width: 100%; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* width: 200px;
+        height: 260px; */
+        /* position: relative; */
+        order: -1;
+        width: 80%;
+    }
+
+    div.pr_three1, div.pr_three2{
+        border: 5px solid fuchsia;
+        display: inline;
+        justify-content: center;
+    
+    }
+
+    article.pr1, article.pr2, article.pr3, article.pr4, article.pr5, article.pr6{
+        border: 2px solid darkcyan;
+        width: 100%;
+        padding: 12px;
+        margin: 10px;
+        text-align: center;
+    } 
+
+    div.size{
+        border: 5px solid firebrick;
+        width: 100%;
+        justify-items: center;
+        display: grid;
+        padding: 10px;
+    }
+
+
+    div.side-menu{
+        border: 1px solid rosybrown;
+        width: 10%;
+        /* position: fixed; */
+        height: 100%;
+        left: 0px;
+        /* padding-left: 5%; */
+        text-align: center;
+        line-height: 3;
+        /* top: 0px; */
+        /* position: fixed; */
+        /* display: contents; */
+        font-size: 30px;
+    }
+
+    section.picture1, section.picture2, section.picture3{
+        border: 10px solid darkmagenta;
+        width: 50%;
+        display: inline-flex;
+        justify-content: center;
+
+    }
+
+    div.product_pics {
+        border: 5px solid blue;
+        display: inline-flex;
+        /* width: 100%; */
+    }
+
+    div.product_show{
+        border: 5px solid hotpink;
+        width: 100%;
+        text-align: center;
+        /* padding: 20px; */
+    }
+    
+    div.goods_part1, div.goods_part2, div.goods_part3, div.goods_part4,
+    div.goods_part5, div.goods_part6{ 
+        border: 5px solid firebrick;
+        /* display: inline-block; */
+        justify-content: center;
+        padding: 3%;
+    }
+
+    div.product_pic1, div.product_pic2, div.product_pic3, div.product_pic4, div.product_pic5
+    , div.product_pic6, div.product_pic7, div.product_pic8
+    , div.product_pic9, div.product_pic10, div.product_pic11, div.product_pic12
+    , div.product_pic13, div.product_pic14, div.product_pic15, div.product_pic16
+    , div.product_pic17, div.product_pic18{
+        /* border: 8px solid darkblue;
+        width: 100%; */
+        /* justify-content: center; */
+        /* width: 60px;
+        height: 160px; */
+        width: 280px;
+        /* height: 350px; */
+        overflow: hidden;
+        border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px 10px;
+    }
+    
+    div.icon_flex {
+        border: 3px solid darkgoldenrod;
+        display: inline-flex;
+        width: 100%;
+        justify-content: inherit;
+    }
+
+    img.candle {
+        width: 250px;
+        height: 400px;
+        padding: 20px;
+    }
+
+    div.goods_part1, div.goods_part2, div.goods_part3, div.goods_part4, div.goods_part5, div.goods_part6 {
+        border: 5px solid firebrick;
+        display: grid;
+        justify-content: center;
+        padding: 3%;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 991px){
+    div.mobileicon{
+        display: flex;
+      }
+    div.copyright{
+        margin-bottom: 60px;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    label.menu__btn{
+        display: none;
+    }
+
+    section.candle_section1{
+        /* border: 5px solid forestgreen; */
+        width: 50%;
+        /* padding-left: 10%; */
+    }
+    
+    section.picture1, section.picture2, section.picture3{
+        border: 10px solid darkmagenta;
+        width: 50%;
+        display: inline-flex;
+        justify-content: center;
+
+    }
+
+    section.picture1{
+        border: 10px solid darkmagenta;
+        width: 50%;
+        text-align: center;
+        /* display: inline-flex;
+        justify-content: center; */
+
+    }
+
+    
+    div.product_pics{
+        border: 5px solid blue;
+        display: inline-flex;
+        /* width: 100%; */
+    }
+    
+    div.product_show{
+        border: 5px solid hotpink;
+        width: 100%;
+        text-align: center;
+        /* padding: 20px; */
+    }
+    
+    img.candle {
+        width: 250px;
+        height: 400px;
+        padding: 20px;
+    }
+    
+    section.goods1, section.goods2, section.goods3{
+        border: 10px solid darkolivegreen;
+        width: 100%;
+        /* display: flex; */
+    }
+    
+    div.goods_part1, div.goods_part2, div.goods_part3, div.goods_part4,
+    div.goods_part5, div.goods_part6{ 
+        border: 5px solid firebrick;
+        /* display: inline-block; */
+        justify-content: center;
+        padding: 3%;
+    }
+    
+    
+    div.product_pic1, div.product_pic2, div.product_pic3, div.product_pic4, div.product_pic5
+    , div.product_pic6, div.product_pic7, div.product_pic8
+    , div.product_pic9, div.product_pic10, div.product_pic11, div.product_pic12
+    , div.product_pic13, div.product_pic14, div.product_pic15, div.product_pic16
+    , div.product_pic17, div.product_pic18{
+        /* border: 8px solid darkblue;
+        width: 100%; */
+        /* justify-content: center; */
+        /* width: 60px;
+        height: 160px; */
+        width: 280px;
+        /* height: 350px; */
+        overflow: hidden;
+        border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px 10px;
+    }
+    
+    div.icon_flex{
+        border: 3px solid darkgoldenrod;
+        display: inline-flex;
+        width: 100%;
+        justify-content: inherit;
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    label.menu__btn{
+        display: none;
+    }
+
+    section.candle_content{
+        min-width: 960px;
+    }
+
+    section.candle_section1{
+        /* border: 5px solid forestgreen; */
+        width: 100%;
+        /* padding-left: 10%; */
+    }
+    
+    section.picture1, section.picture2, section.picture3{
+        border: 10px solid darkmagenta;
+        width: 50%;
+        display: inline-flex;
+        justify-content: center;
+
+    }
+    
+    div.product_pics{
+        border: 5px solid blue;
+        display: inline-flex;
+        /* width: 100%; */
+    }
+    
+    div.product_show{
+        border: 5px solid hotpink;
+        width: 100%;
+        text-align: center;
+        /* padding: 20px; */
+    }
+    
+    img.candle{
+        width: 300px;
+        height: 400px;
+        padding: 20px;
+    }
+    
+    section.goods1, section.goods2, section.goods3{
+        border: 10px solid darkolivegreen;
+        width: 100%;
+        /* display: flex; */
+    }
+    
+    div.goods_part1, div.goods_part2, div.goods_part3, div.goods_part4,
+    div.goods_part5, div.goods_part6{ 
+        border: 5px solid firebrick;
+        display: flex;
+        justify-content: center;
+        padding: 3%;
+    }
+    
+    
+    div.product_pic1, div.product_pic2, div.product_pic3, div.product_pic4, div.product_pic5
+    , div.product_pic6, div.product_pic7, div.product_pic8
+    , div.product_pic9, div.product_pic10, div.product_pic11, div.product_pic12
+    , div.product_pic13, div.product_pic14, div.product_pic15, div.product_pic16
+    , div.product_pic17, div.product_pic18{
+        /* border: 8px solid darkblue;
+        width: 100%; */
+        /* justify-content: center; */
+        /* width: 60px;
+        height: 160px; */
+        width: 280px;
+        /* height: 350px; */
+        overflow: hidden;
+        border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    div.icon_flex{
+        border: 3px solid darkgoldenrod;
+        display: inline-flex;
+        width: 100%;
+        justify-content: inherit;
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+    label.menu__btn{
+        display: none;
+    }
+
+    section.candle_content{
+        /* min-width: 960px; */
+    }
+
+    section.candle_section1{
+        /* border: 5px solid forestgreen; */
+        width: 100%;
+        /* padding-left: 10%; */
+    }
+    
+    
+    
+    div.product_show{
+        border: 5px solid hotpink;
+        width: 100%;
+        text-align: center;
+        /* padding: 20px; */
+    }
+    
+    
+    
+    section.goods1, section.goods2, section.goods3{
+        border: 10px solid darkolivegreen;
+        width: 100%;
+        /* display: flex; */
+    }
+    
+    div.goods_part1, div.goods_part2, div.goods_part3, div.goods_part4,
+    div.goods_part5, div.goods_part6{ 
+        border: 5px solid firebrick;
+        display: flex;
+        justify-content: center;
+        padding: 3%;
+    }
+    
+    
+    div.product_pic1, div.product_pic2, div.product_pic3, div.product_pic4, div.product_pic5
+    , div.product_pic6, div.product_pic7, div.product_pic8
+    , div.product_pic9, div.product_pic10, div.product_pic11, div.product_pic12
+    , div.product_pic13, div.product_pic14, div.product_pic15, div.product_pic16
+    , div.product_pic17, div.product_pic18{
+        /* border: 8px solid darkblue;
+        width: 100%; */
+        /* justify-content: center; */
+        /* width: 60px;
+        height: 160px; */
+        width: 280px;
+        height: 350px;
+        overflow: hidden;
+        border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    div.icon_flex{
+        border: 3px solid darkgoldenrod;
+        display: inline-flex;
+        width: 100%;
+        justify-content: inherit;
+    }
+
+
+}
+
+
+
+

@@ -1,0 +1,129 @@
+@import "../css/header.css"; 
+  
+*{  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 0; 
+    /* outline: 1px solid red; */
+    border: none !important;
+} 
+
+body{
+    /* background-repeat: repeat-y; */
+    font-family: "微軟正黑體";
+    background-color: #f1ece8;
+}
+
+html{   
+    width: 1920px; 
+    border:5px solid gold;  
+   
+    
+}
+
+.block-widge{
+    border: 5px solid blue;
+    /* background-color: #ffffff; */
+    padding: 50px;
+    margin-top: 0px;    
+}
+
+div.wishlist_content{
+    border: 5px solid green;
+    display: inline-block;
+    width: 100%;
+    padding: 160px;
+    
+}
+
+.wishlist_word{
+    border: 1px solid red;
+}
+
+.mywishlist{
+    border: 1px solid purple;
+}
+
+
+img.item1{
+    width: 300px;
+    height: 300px;
+}
+
+/* table{
+    border-collapse: collapse;
+}  */
+
+div.shopping_item{
+    /* border: 5px solid orange; */
+    width: 100%;
+    display: flex;
+    margin: auto 0;
+    padding: 30px;
+    border-bottom: 1px solid black !important;
+}
+
+
+
+a.btn_add_to_bag{
+    /* border: 1px solid black!important; */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: #d8a982ed;
+}
+
+a.btn_add_to_bag:hover{
+    background-color: rgb(201, 91, 91) ;
+    color: white;
+}
+
+a.btn_shopping_delete{
+    /* border: 1px solid black!important; */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: #d8a982ed;
+}
+
+a.btn_shopping_delete:hover{
+    background-color: rgb(170, 67, 67) ;
+    color: white;
+}
+
+p.order, span.shopping_price, div.add_to_bag, div.shopping_delete{
+    padding: 46px 61px;
+    /* background-color:grays; */
+    /* border: 1px solid black !important; */
+}
+
+p.price{
+    width: 262px;
+}
+
+a.btn_continue_shopping{
+    /* border: 1px solid black !important; */
+    display: inline-block;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 20px;
+    width: 250px;
+    margin: 0px auto;
+    margin-top: 20px;
+    background-color: #ebb991;
+}
+
+a.btn_continue_shopping:hover{
+    background-color: rgb(201, 91, 91);
+    color: white;
+}
+
+
+
+div.arrow{
+    border: 3px solid darkgoldenrod;
+    width: 300px;
+    margin-left: 1500px;
+}
+
+
+    

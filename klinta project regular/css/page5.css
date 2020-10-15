@@ -1,0 +1,168 @@
+@import "../css/header.css"; 
+  
+*{  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 0; 
+    border: none !important;
+}
+ 
+html{   
+    width: 1920px; 
+    /* border:5px solid gold !important;    */
+}
+
+body{
+    /* background-repeat: repeat-y;  */
+    font-family: "微軟正黑體"; 
+    background-color: #f1ece8;
+}
+
+aside{
+    border: 1px solid red;
+    padding: 100px;
+    /* margin: 100px; */
+    width: 290px;
+    line-height: 36px;
+    background-color: #eeded1;
+    height: 700px;
+    margin-top: 50px;
+} 
+
+div.flex{
+    display: flex;
+}
+
+div.contact_detail{
+    display: inline-block;
+    border: 5px solid sienna;
+    margin-left: 146px;
+    background-color: #DBC1A4;
+    margin: 50px auto;
+} 
+
+div.contact{
+    border: 5px solid blue;
+    padding: 10px;
+    width: 1000px;
+    /* display: flex; */
+    /* border-bottom: 1px solid black !important; */
+    background-color: #eeded1;
+    margin-left: 100px;
+    margin-top: 50px;
+} 
+
+div.mail_icon{
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+div.phone_icon{
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+p.contact{
+    font-size: 28px;
+    border: 1px solid darkcyan;
+    margin-right: 15px;
+    /* display: inline-flex; */
+    width: 600px;
+}
+
+div.contact_email{
+    border: 1px solid indianred;
+    display: flex;
+    width: 880px;
+    margin-top: 30px;
+}
+
+h3{
+    font-size: 26px;
+}
+
+li.leader{
+    font-size: 22px;
+    border: 1px solid black !important;
+    width: 130px;
+    /* text-align: center; */
+    background-color: snow;
+    margin: 10px auto;
+}
+
+div.main{
+    border: 10px solid orangered;
+    margin: 100px;
+    /* padding: 20px; */
+    line-height: 60px;
+    background-color: #eeded1;
+    width: 1000px;
+}
+
+div.process ul{
+    border: 5px solid green ;
+    /* list-style: disc !important; */
+    /* list-style-position: inside; */
+    margin-left: 35px;
+}
+
+div.process ul li{
+    padding-left: 5px;
+    list-style: disc !important;
+}
+
+
+
+div.status ul{
+    border: 5px solid green;
+    list-style: disc !important;
+    margin-left: 35px;
+}
+
+div.cancel ul{
+    border: 5px solid green;
+    list-style: disc !important;
+    margin-left: 35px;
+}
+
+div.policy ul{
+    border: 5px solid green;
+    margin-left: 35px;
+}
+
+p.policy{
+    margin-left: 35px;
+}
+
+
+div.payment ul{
+    border: 5px solid green;
+    list-style: disc !important;
+    margin-left: 35px;
+}
+
+p.payment{
+    margin-left: 35px;
+}
+
+h3.order{
+    border: 3px solid orange;
+    background-color: #ffffff;
+    /* padding-left: 35px; */
+    text-align: center;
+}
+
+div.arrow{
+    border: 3px solid darkgoldenrod;
+    width: 300px;
+    margin-left: 1500px;
+}
+
+i.fa-angle-down{
+    border: 5px solid red;
+}

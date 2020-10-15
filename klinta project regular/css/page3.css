@@ -1,0 +1,170 @@
+@import "../css/header.css"; 
+  
+*{  
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    font-size: 0; 
+    border: none !important;
+}
+ 
+body{
+    /* background-repeat: repeat-y; */
+    font-family: "微軟正黑體";
+    background-color: #f1ece8;
+}
+
+div.side-menu{
+    font-size: 200px;
+    /* border: 10px solid red; */
+    padding: 10px 50px;
+    position: fixed;
+    font-size: 30px;
+    line-height: 5;  
+}
+
+section.picture1{
+    border: 10px solid rebeccapurple;
+    align-items: center;
+    display: flex;
+    max-width: 80%;
+    margin: auto 300px;
+    padding-left: 180px;
+    padding-top: 30px;
+}
+
+section.picture2{
+    border: 10px solid rebeccapurple;
+    align-items: center;
+    display: flex;
+    max-width: 80%;
+    margin: auto 300px;
+    /* padding-left: 180px; */
+    padding-top: 30px;
+    justify-content: center;
+}
+
+section.picture3{
+    border: 10px solid rebeccapurple;
+    align-items: center;
+    display: flex;
+    max-width: 80%;
+    margin: auto 300px;
+    /* padding-left: 180px; */
+    padding-top: 30px;
+    justify-content: center;
+}
+
+span.goods_name{
+    border: 5px solid firebrick;
+    padding: 16px;
+}
+
+img.candle_banner{
+    width: 1000px;
+    height: 600px;
+    /* right: 20px; */
+    justify-content: center;
+}
+
+img.candle_banner2{
+    width: 1000px;
+    height: 600px;
+    justify-content: center;
+}
+
+img.candle{
+    width: 300px;
+    height: 350px;
+    justify-content: center;
+    padding: 20px;
+}
+
+div.goods_part1{
+    border: 10px solid red;
+    align-items: center;
+    display: flex;
+    max-width: 80%;
+    margin: auto 300px;
+    /* padding-left: 180px; */
+    justify-content: center;
+    padding-top: 30px;
+}
+
+div.goods_part2{
+    border: 10px solid red;
+    align-items: center;
+    display: flex;
+    max-width: 80%;
+    margin: auto 300px;
+    /* padding-left: 180px; */
+    justify-content: center;
+    padding-top: 30px; 
+} 
+
+div.goods_part3{
+    border: 10px solid red;
+    align-items: center;
+    display: flex;
+    max-width: 80%;
+    margin: auto 300px;
+    /* padding-left: 180px; */
+    justify-content: center;
+    padding-top: 30px; 
+} 
+
+div.goods_part4{
+    border: 10px solid red;
+    align-items: center;
+    display: flex;
+    max-width: 80%;
+    margin: auto 300px;
+    /* padding-left: 180px; */
+    justify-content: center;
+    padding-top: 30px; 
+} 
+
+div.goods_part5{
+    border: 10px solid red;
+    align-items: center;
+    display: flex;
+    max-width: 80%;
+    margin: auto 300px;
+    /* padding-left: 180px; */
+    justify-content: center;
+    padding-top: 30px; 
+} 
+
+div.goods_part6{
+    border: 10px solid red;
+    align-items: center;
+    display: flex;
+    max-width: 80%;
+    margin: auto 300px;
+    /* padding-left: 180px; */
+    justify-content: center;
+    padding-top: 30px; 
+} 
+
+img.goods {
+    width: 200px;
+    height: 200px;
+}
+
+div.product_pic1, div.product_pic2, div.product_pic3, div.product_pic4, div.product_pic5, div.product_pic6, div.product_pic7, div.product_pic8, div.product_pic9, div.product_pic10, div.product_pic11, div.product_pic12, div.product_pic13, div.product_pic14, div.product_pic15, div.product_pic16, div.product_pic17, div.product_pic18{
+    border: 5px solid green;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+    padding: 10px;
+}  
+
+div.arrow{
+    display: inline-block;
+    width: 100px;
+    border: 5px solid sienna;
+    margin-left: 1500px;
+    
+}
+

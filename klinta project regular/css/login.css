@@ -1,0 +1,519 @@
+@import "../css/header.css";
+
+* {
+    /* box-sizing: border-box; */
+    /* border: none !important; */
+    border: 1px solid blue;
+}
+
+html{
+    /* border:5px solid rgb(153, 153, 152); */
+    /* overflow-x:hidden; */
+}
+
+body{
+    font-family: "微軟正黑體";
+    background-color: #f1ece8;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: url(../website_pic/flowers/59c916a0d73380ba90befdcf9f1e298c.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+
+
+div.login_group{
+  border: 3px solid gold;
+  display: flex;
+  justify-content: center;
+  padding: 200px;
+}
+
+div.login{
+  border: 2px solid #ffffff !important;
+  width: 600px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.form h2{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+
+.form .group{
+  margin-bottom: 20px;
+}
+
+.form label{
+  line-height: 2;
+  font-size: 1.3rem;
+}
+
+.form input{
+  width: 100%;
+  border: 1px solid darkcyan;
+  line-height: 2;
+  border-radius: 5px;
+}
+
+.form .btn-group{
+  font-size: 0px;
+}
+
+.form .btn{
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  width: 190px;
+  padding: 10px 0;
+  margin-top: 30px;
+  background-color: #eeded1;
+  margin-bottom: 30px;
+}
+
+.form .btn:hover{
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  width: 190px;
+  padding: 10px 0;
+  margin-top: 30px;
+  background-color: #e0c3ac;
+  color: #fff;
+}
+
+.form .btn + .btn{
+  margin-left: 20px;
+}
+
+div.login_socialmedia {
+  border: 3px solid firebrick;
+  margin-left: 0px;
+  margin-bottom: 30px;
+}
+
+
+
+
+/* 漢堡堡 */
+#menu__toggle {
+    opacity: 0;
+  }
+  
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  
+    width: 26px;
+    height: 26px;
+  
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+  
+    width: 100%;
+    height: 2px;
+  
+    background-color: #616161;
+  
+    transition-duration: .25s;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    line-height: 3;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+  
+    list-style: none;
+  
+    background-color:  #eeded1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  
+    transition-duration: .25s;
+  }
+  
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+  
+    color: #333;
+  
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+  
+    text-decoration: none;
+  
+    transition-duration: .25s;
+  }
+  .menu__item:hover {
+    background-color: #cf635b;
+  }
+
+  div.mobileicon{
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    background-color:  #b68965;
+    display: none;
+  }
+
+  div.mobileicon div.navright a {
+    padding: 0px 50px;
+    
+
+  }
+
+  div.mobileicon div.navright{
+    display: flex;
+  }
+
+  a#go_top{
+    display: block;
+    opacity: 1;
+    transition: opacity .8s;
+  }
+  
+  a#go_top.-up{
+    /* display: none; */
+    opacity: 0;
+  }
+
+
+
+
+
+    /* 老師的五個斷點 */
+
+
+/* 最小320 */
+@media screen and (min-width: 320px) and (max-width: 574px){
+    label.menu__btn{
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    ul.nav_tops{
+        display: none;
+    }
+
+    div.login_group{
+      border: 3px solid gold;
+      display: grid;
+      justify-content: center;
+      /* padding: 200px; */
+    }
+    
+    div.login {
+      border: 2px solid #ffffff !important;
+      width: 300px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 50px;
+  }
+    
+
+}
+
+
+@media screen and (max-width: 575px){
+    label.menu__btn{
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    ul.nav_tops{
+        display: none;
+    }
+
+
+
+    div.login_group {
+      /* border: 3px solid gold; */
+      display: block;
+      justify-content: center;
+  }
+
+  div.login_group{
+    border: 3px solid gold;
+    display: grid;
+    justify-content: center;
+    /* padding: 200px; */
+  }
+  
+  div.login {
+    border: 2px solid #ffffff !important;
+    width: 400px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+    
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+
+    
+    label.menu__btn{
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    ul.nav_tops{
+        display: none;
+    }
+
+    
+    div.login_group {
+      /* border: 3px solid gold; */
+      display: block;
+      justify-content: center;
+  }
+
+  div.login_group{
+    border: 3px solid gold;
+    display: grid;
+    justify-content: center;
+    padding: 200px;
+  }
+
+  div.login {
+    border: 2px solid #ffffff !important;
+    width: 400px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+    
+}
+
+@media screen and (max-width: 991px){
+    div.mobileicon{
+        display: flex;
+      }
+    div.copyright{
+        margin-bottom: 60px;
+    }
+
+    div.social_link{
+        border: 1px solid red;
+        /* display: inline-block; */
+        /* margin-top: 100px; */
+        grid-template-columns: repeat(3,1fr);
+        /* display: grid; */
+        /* vertical-align: middle; */
+        /* margin: 0px -11px; */
+        /* margin: 80px; */
+        /* box-sizing: content-box; */
+        /* font-size: 0; */
+        padding-left: 100px;
+        margin: 0 auto;
+        width: 100%;
+    
+    }
+
+    div.login_group{
+      border: 3px solid gold;
+      display: grid;
+      justify-content: center;
+      padding: 200px;
+    }
+  
+    div.login {
+      border: 2px solid #ffffff !important;
+      width: 400px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 50px;
+  }
+
+    
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    
+
+    label.menu__btn{
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    ul.nav_tops{
+        display: none;
+    }
+
+    div.login_group {
+      /* border: 3px solid gold; */
+      display: block;
+      justify-content: center;
+  }
+  
+  div.login_group{
+    border: 3px solid gold;
+    display: grid;
+    justify-content: center;
+    padding: 200px;
+  }
+
+  
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+    label.menu__btn{
+        display: none;
+    }
+
+    div.login_group {
+      /* border: 3px solid gold; */
+      display: block;
+      justify-content: center;
+  }
+}
+
+
+
+@media screen and (min-width: 1200px){
+    label.menu__btn{
+        display: none;
+    }
+
+    div.login_group {
+      /* border: 3px solid gold; */
+      display: flex;
+      justify-content: center;
+  }
+}
+
+
+/* 老師的五個斷點 */
+/* 
+
+最小320
+@media screen and (max-width: 575px){
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+
+@media screen and (min-width: 1200px){
+
+} */
+
+
+
+.mg1 {
+
+    /* left: -300px; */
+    margin-top: 50px;
+    position: relative;
+    left: 50%;
+    opacity: 0;
+}
+
+
+

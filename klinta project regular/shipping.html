@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/page6.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head> 
+<body> 
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                      <span></span>
+                    </label>
+
+                    <!-- 漢堡堡 -->
+                    <ul class="menu__box">
+                        <li><a class="menu__item" href="aboutus.html">關於我們</a></li>
+                        <li><a class="menu__item" href="candle1.html">香氛工藝蠟燭</a></li>
+                        <li><a class="menu__item" href="candletwo.html">相關商品</a></li>
+                        <li><a class="menu__item" href="contactus.html">購物須知</a></li>
+                    </ul>
+                  </div>
+
+                <a href="./index.html" class="logo"><img class="logo_picture" src="./logo/資產 1-100.jpg" alt="圖片未正常出現會出現的文字"></a>
+                
+                 
+                <ul class="nav_tops">
+                    <li class="nav_li about_us"><a href="aboutus.html">關於我們</a></li>
+                    <li class="nav_li aboutcandle"><a href="candle1.htmls">香氛工藝蠟燭</a></li>
+                    <li class="nav_li related_product"><a href="candletwo.html">相關商品</a></li>
+                    <li class="nav_li buy_note"><a href="contactus.html">購物須知</a></li>
+                    <!-- <li class="nav_li buying_bag"><a href="shipping.html">購物車</a></li>
+                    <li class="nav_li contact_us"><a href="#"></a>會員登入</a></li> -->
+                    <li class="nav_li navright">
+                        <div class="navright">
+                            <a href="wishlist.html"><i id="fa-heart" class="fas fa-heart"></i></a>
+                            <a href="#"><i id="fa-user-alt" class="fas fa-user-alt"></i></a>
+                            <a href="shipping.html"><i id="fa-cart-plus" class="fas fa-cart-plus"></i></a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <img class="shipping_list_pic" src="./website_pic/candle/pageone/圖片2.png">
+    <div class="shopping_status">
+        <p class="shipping_status">送貨狀態</p>
+        <ol class="list">
+            <li class="list" id="received">收到訂單</li>
+            <li class="list">撿貨中</li>
+            <li class="list">運送中</li>
+            <li class="list">已送達</li>
+        </ol>
+    </div>
+    <div class="checkout_list">
+        <p class="table">結帳清單</p>
+        <div class="shopping_row">
+            <div class="shopping_data">商品資料</div>
+            <div class="shopping_data">單件價格</div>
+            <div class="shopping_data">數量</div>
+            <div class="shopping_data">小計</div>
+            <div class="shopping_data" id="shopping_data">是否繼續購物</div>
+
+        </div>
+        <div class="checklist_data">
+            <div class="shopping_item">       
+                <img class="checklist_item" src="./website_pic/candle/shopping list/jo_L9KA01_130x180.jpg">
+                <p class="order_item">茶樹&天竺葵香氛放鬆蠟燭 </p>
+            </div> 
+        
+            <div class="order_price">
+                <p class="order_price">NT$1,180</p>
+            </div>
+
+            <div class="amount">
+                <div class="input_group_amountbtn">
+                    <!-- <span class="input_group_btn">3</span> -->
+                    <!-- <span class="input_group_btn">btn</span> -->
+                        <!-- <input type="number"> -->
+                        <form id='myform' method='POST' action='#'>
+                            <input type='button' value='-' class='qtyminus' field='quantity' /><!--
+                            --><input type='text' name='quantity' value='0' class='qty' /><!--
+                        --><input type='button' value='+' class='qtyplus' field='quantity' />
+                        </form>
+                </div>
+            </div>
+            <div class="total">
+                <p>NT$1,180</p>    
+            </div>
+            <div class="continue_shopping">
+                <a href="candle1.html" class="continue_shopping"><p class="continue_shopping">繼續購物</p></a>
+            </div>
+        </div>
+    </div>
+
+    <section class="order_form">
+        <div class="order_choice">
+            <div class="order_header">
+                <h3>選擇送貨及付款方式</h3>
+            </div>
+            <div class="checkout_btn">
+                <div class="form_group">
+                    <label>送貨地點</label>
+                    <span class="select_cart_form">
+                        <select class="form_control">
+                            <option class="tw">阿布達比</option>
+                            <option class="kr">韓國</option>
+                            <option class="ab">台灣</option>
+                            <option class="la">洛杉磯</option>
+                            <option class="sf">舊金山</option>
+                            <option class="jp">日本</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="form_group">
+                    <label>送貨方式</label>
+                    <span class="select_cart_form">
+                        <select class="form_control">
+                            <option class="tw">7-11 取貨付款 (到指定店鋪需2-4日)</option>
+                            <option class="kr">全家 取貨付款  (到指定店鋪需2-4日)</option>
+                            <option class="ab">宅配 (送貨需要2-3日)</option>
+                            <option class="la">國際郵件 (送貨需要7-10日)</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="form_group">
+                    <label>付款方式</label>
+                    <span class="select_cart_form">
+                        <select class="form_control">
+                            <option class="tw">取貨付款</option>
+                            <option class="kr">信用卡</option>
+                            <option class="ab">Line Pay</option>
+                        </select>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="order_summary_sure">
+            <div class="summary_header">
+                <h3>訂單資訊</h3>            
+            </div>
+            <div class="section_body">
+                <div class="check_out_summary">
+                    <div class="subtotal">
+                        <span class="pull_left">小計</span>
+                        <span class="pull_right">NT$1,180</span>
+                    </div>
+                    <div class="deliver_fee">
+                        <span class="pull_left">運費</span>
+                        <span class="pull_right">NT$80</span>
+                    </div>
+                    <div class="subtotally">
+                        <span class="pull_left">合計</span>
+                        <span class="pull_right">NT$1,260</span>
+                    </div>
+                    <div class="go_to_pay">
+                        <a href="#" class="btn_go_to_pay">前往結帳</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="additional_purchases">
+        <div class="additional_purchases">
+            <div class="additional_header">
+                <h3 class="additional">加購商品</h3>            
+            </div>
+            <div class="additional_goods">
+                <a href="#">
+                <img src="./website_pic/candle/another item/5585204a9d0dc293581aaca55d569ce6.jpg" class="additional_choice">
+                <img src="./website_pic/candle/another item/5E32556968DA21580356969.jpg" class="additional_choice">
+                <img src="./website_pic/candle/another item/117137286_1603112313185619_3307058419964286673_n.jpg" class="additional_choice">
+            </div>
+            <div class="additional_product">
+                <div class="additional_name">身體乳- 薰衣草&迷迭香</div>
+                <div class="additional_name">洗手乳- 蜂蜜&金盞花  </div>
+                <div class="additional_name">Scroll 雕花加熱燈器</div>
+            </div>
+            <div class="additional_product_price">
+                <div class="additional_price">NT$980</div>
+                <div class="additional_price">NT$680</div>
+                <div class="additional_price">NT$880</div>
+            </a>
+            </div>
+
+    </section>
+    
+    <a href="#" id="go_top"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
+<footer class="foot">
+    <div class="footer_contact_me">
+        <p>聯繫電話:Calling 0800-628-628</p>
+        <p>Email:service@klinta.com.tw</p>
+        <p>客服時間:09:00-12:00 / 13:00-18:00 週一至週五</p>
+    </div>
+    <div class="social_media">
+        <div class="social_media_link">
+            <a href="#"><i class="fab fa-facebook fa-5x"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-1x"></i></a>   
+            <a href="#"><i class="fab fa-line fa-1x"></i></a>
+        </div>
+    </div>
+
+    
+    <!-- <div class="email">
+        <div class="footer_email" id="email_text" type="text" placeholder="輸入 email獲得最新優惠 優惠訊息">
+            <button id="btn_email" onclick="recordnewletter">送出</button>
+    </div>         -->
+
+    </div>
+    <!-- <div class="anti_frauds">
+        <div>165 反詐騙</div>
+        <div>165 ANTI-FRAUD</div>
+    </div> -->
+    <div class="copyright">© COPYRIGHT KLINTA GROUP 2020</div>
+</div>
+</footer>
+<div class="mobileicon">
+    <div class="navright">
+        <a href="wishlist.html"><i id="fa-heart" class="fas fa-heart"></i></a>
+        <a href="#"><i id="fa-user-alt" class="fas fa-user-alt"></i></a>
+        <a href="shipping.html"><i id="fa-cart-plus" class="fas fa-cart-plus"></i></a>
+    </div>
+</div>
+    <div class="overlay">
+        <article>
+          <!-- <form class="log_in">登入會員 -->
+              <!-- <p class="member_id">Email Address/Account 會員帳號</p>
+              <input type="text" placeholder="輸入 Email">
+              <p class="member_password">Password 會員密碼</p>
+              <input type="text" placeholder="輸入 Email">
+              <br>
+              <button type="button" class="btn_drawer">登入</button> -->
+          <!-- </form> -->
+          <!-- <form class="input_group" >加入會員 -->
+            <!-- <label class="join_member_email">Email Address 電子信箱</label> -->
+            <!-- <input type="text" placeholder="輸入 Email"> -->
+            <!-- <label class="join_member_password">Password會員密碼 (6碼至15碼英數字)</label> -->
+            <!-- <input type="text" placeholder="輸入 Email"> -->
+            <!-- <label class="join_member_passwordagain">Password再次輸入密碼</label> -->
+            <!-- <input type="text" placeholder="輸入 Email"> -->
+            <!-- <br> -->
+            <!-- <button type="button" class="btn_drawer">加入</button> -->
+          <!-- </form> -->
+          <div class="login_page">
+            <div id="container1">
+              <div class="login">  
+                <h3 class="login">登入 Login</h3>
+                <form action="用戶管理.php">
+                  <input type="text" id="username" name="username" placeholder="帳號" required>
+                  <div class="tab"></div>
+                  <input type="text" id="password" name="password" placeholder="密碼" required>
+                  <div class="tab"></div>
+                  <input type="submit" value="登入" class="submit" onclick="location" href="#">
+                </form>  
+                <h5 onclick="show_hide()">忘記密碼</h5>
+                <h5 onclick="show_hide()">註冊帳號</h5>
+                <button type="button" class="btn_modal_close">&#10006</button>
+                <div class="login_socialmedia">
+                    <a href="#"><i class="fab fa-facebook fa-1x"></i></a>
+                    <a href="#"><i class="fab fa-line fa-1x"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+              </div><!-- login end-->
+            </div><!-- container1 end-->
+          </div><!-- login_page end-->
+                
+              </div><!-- signup end-->
+            </div><!-- container2 end-->
+          </div><!-- signup_page end--> 
+      
+            <!-- <div class="input_group"> -->
+                <!-- <label>會員帳號</label> -->
+                <!-- <input type="text" placeholder="輸入 Email"> -->
+            </div>
+          <!-- <button type="button" class="btn_modal_close">關閉</button> -->
+        </article>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script>// DOM 載入完成之後
+      $(function(){
+        var a_top = document.getElementById("go_top");
+        window.addEventListener("scroll", function(e){
+        if(window.scrollY == 0){
+            a_top.classList.add("-up");
+        }
+        else{
+            a_top.classList.remove("-up");
+        }
+        });
+    
+        // 開啟 Modal 彈跳視窗
+        $("li.contact_us").on("click", function(){
+          $("div.overlay").addClass("-on");
+        });
+    
+        // 關閉 Modal
+        $("button.btn_modal_close").on("click", function(){
+          $("div.overlay").addClass("-opacity-zero");
+    
+          // 設定隔一秒後，移除相關 class
+          setTimeout(function(){
+            $("div.overlay").removeClass("-on -opacity-zero");
+          }, 1000);
+        });
+    
+      });
+      function show_hide() {
+        var login = document.getElementById("container1");
+        var signup = document.getElementById("container2");
+        var copyright = document.getElementById("copyright");
+      
+        if (login.style.display === "none") {
+            login.style.display = "block";  //lonin出現
+            document.getElementById("username").value="";
+            document.getElementById("password").value="";
+            signup.style.display = "none";  //signup消失
+            copyright.style.margin = "200px 0px 0px 0px";
+        } else {
+            login.style.display = "none";   //login消失
+            signup.style.display = "block"; //signup出現
+            signup.style.visibility="visible";
+            copyright.style.margin = "200px 0px 0px 0px";
+         
+            document.getElementById("fullname").value="";
+            document.getElementById("username2").value="";
+            document.getElementById("password2").value="";
+            document.getElementById("comfirm_password").value="";
+        }
+    }
+        
+        $(function() {
+      // This button will increment the value
+      $('.qtyplus').click(function(e) {
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        fieldName = $(this).attr('field');
+        // Get its current value
+        var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+        // If is not undefined
+        if (!isNaN(currentVal)) {
+          // Increment
+          $('input[name=' + fieldName + ']').val(currentVal + 1);
+        } else {
+          // Otherwise put a 0 there
+          $('input[name=' + fieldName + ']').val(0);
+        }
+      });
+      // This button will decrement the value till 0
+      $(".qtyminus").click(function(e) {
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        fieldName = $(this).attr('field');
+        // Get its current value
+        var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+        // If it isn't undefined or its greater than 0
+        if (!isNaN(currentVal) && currentVal > 0) {
+          // Decrement one
+          $('input[name=' + fieldName + ']').val(currentVal - 1);
+        } else {
+          // Otherwise put a 0 there
+          $('input[name=' + fieldName + ']').val(0);
+        }
+      });
+    });
+      </script>
+    
+</body>
+</html>

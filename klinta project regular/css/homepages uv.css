@@ -1,0 +1,382 @@
+@import "../css/header.css";
+
+html{
+    width: 1920px;
+    border:10px solid gold;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+
+header.header{
+    min-width: 1200px;
+    width: 100%;
+    vertical-align: bottom;
+    text-align: center;
+    font-size: 20px;
+}
+
+header.header nav.nav a{
+    padding: 5px 1em;
+}
+
+body{
+    background-color: #f1ece8;
+}
+
+img.logo_picture{
+    display: inline-block;
+    width: 200px;
+    /* width: 1600px; */
+    text-align: center;
+    position: relative;
+    vertical-align: bottom;
+    margin:auto;
+  }
+
+a,li,footer{
+    color:black;
+    font-size: 16px;
+    text-decoration: none;
+    list-style: none;
+}
+
+ul.nav_tops{
+    padding: 20px 10px;
+    min-width: 1200px;
+    /* width: 100%; */
+    height: 10px;
+    vertical-align: bottom;
+    font-size: 22px;
+    border: 1px solid purple;
+    background-color: #DBC1A4;
+    opacity: 0.7;
+    position: relative;
+    /* margin-inline: 100px; */
+}
+
+li.nav_li{
+    display: inline-block;
+}
+
+section.grid_view1{
+    border: 10px solid blue;
+    display: inline-block;
+    height: 300px;
+}
+
+section.grid_view2{
+    border: 1px solid magenta;
+    display: inline-block;
+}
+
+section.grid_view3{
+    border: 1px solid goldenrod;
+    display: inline-block;
+}
+
+h1{
+    font-size: 20px;
+}
+
+h1.slogan1{
+    border:1px solid orangered;
+    padding: 18px;
+    font-size: 20px;
+    text-align: center;
+}
+
+div.goods_intro1{
+    /* border: 1px solid seagreen; */
+    display:inline-flex;
+    top: 550px;
+    width: 60%;
+    height: 300px;
+    font-size: 14px;
+    position: relative;  
+}
+
+img.goods1,img.goods2,img.goods3,img.goods4,img.goods5,img.goods6,img.goods7,img.goods8,img.goods9{
+    width: 150px;
+    height: 200px;
+}
+
+div.goods_detail1,div.goods_detail2,div.goods_detail3{
+    width: 170px;
+    border: 2px solid red;
+    padding: 12px;
+    display: inline-block;
+    position: relative;
+    bottom: 50px;
+    right: 20px;
+    
+}
+
+div.goods_intro2{
+    /* border: 1px solid indigo; */
+    /* display: inline-block; */
+    display:inline-flex;
+    top: 550px;
+    width: 60%;
+    height: 300px;
+    font-size: 14px;
+    position: relative; 
+    left: 100px;
+}
+
+div.goods_detail4,div.goods_detail5,div.goods_detail6{
+    width: 170px;
+    border: 2px solid red;
+    padding: 12px;
+    display: inline-block;
+    position: relative;
+    bottom: 50px;
+    right: 45px;
+}
+
+div.goods_intro3{
+    border: 5px solid firebrick;
+    /* display: inline-block; */
+    display:inline-flex;
+    top: 550px;
+    width: 60%;
+    height: 300px;
+    /* font-size: 14px; */
+    position: relative; 
+    left: 100px;
+}
+
+img.picture1{
+    width: 100%;
+    height: 600px;
+}
+
+section.grid_view1,section.grid_view2,section.grid_view3{
+    display: inline-flex;
+    border: 1px solid palevioletred;
+    height: 850px;
+    width: 1600px;
+    text-align: center;
+    position: relative;
+    left: 160px;
+    
+}
+
+img.grid_picture1_left1,img.grid_picture1_left2,img.grid_picture2_right1,img.grid_picture2_right2,img.grid_picture3_right1,img.grid_picture3_right2{
+    width: 150px;
+    height: 250px;
+}
+
+/* div.grid_picture1,div.grid_picture2,div.grid_picture3{ 
+    border: 5px solid red;
+    display: inline-block;
+    width: 300px;
+    position: absolute;
+}  */
+
+
+
+img.grid_picture2_right1{
+    display: inline-block;
+    border: 5px solid rebeccapurple;
+    width: 300px;
+    height: 260px;
+    position: absolute;
+    top: 460px;
+    right: 60px;
+    border-radius: 90%;
+}
+
+img.grid_picture2_right2{
+    display: inline-block;
+    border: 1px solid rebeccapurple;
+    width: 300px;
+    height: 360px;
+    position: absolute;
+    top: 100px;
+    right: 190px;
+}
+
+img.grid_picture1_left1{
+    display: inline-block;
+    border: 1px solid rebeccapurple;
+    width: 300px;
+    height: 360px;
+    position: absolute;
+    top: 100px;
+    left: 190px;
+}
+
+img.grid_picture1_left2{
+    display: inline-block;
+    border: 1px solid indianred;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 90%;
+    left: 360px;
+    top: 420px;
+}
+
+img.grid_picture3_right1{
+    display: inline-block;
+    border: 5px solid rebeccapurple;
+    width: 300px;
+    height: 460px;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+
+img.grid_picture3_right2{
+    display: inline-block;
+    border: 5px solid rebeccapurple;
+    width: 300px;
+    height: 260px;
+    position: absolute;
+    top: 460px;
+    left: 260px;
+    border-radius: 90%;
+}
+
+div.introduce1{
+    border: 1px solid blue;
+    display: inline-block;
+    /* float: right; */
+    /* margin: 0px; */
+    padding: 40px;
+    width: 70%;
+    line-height: 2;
+    font-size: 18px;
+    height: 350px;
+    /* width: 150px; */
+    text-align: left;
+    position: relative;
+    left: 680px;     
+}
+
+div.introduce2{
+    border: 1px solid blue;
+    /* float: left; */
+    margin: 0px;
+    padding: 40px;
+    width: 40%;
+    display: inline-block;
+    /* width: 70%; */
+    line-height: 2;
+    font-size: 18px;
+    height: 350px;
+    /* width: 150px; */
+    text-align: left;
+    position: relative;
+    right: 850px; 
+}
+
+div.introduce3{
+    border: 1px solid blue;
+    /* float: right; */
+    margin: 0px;
+    padding: 40px;
+    width: 60%;
+    line-height: 1.8;
+    display: inline-block;
+    font-size: 18px;
+    height: 350px;
+    /* width: 150px; */
+    text-align: left;
+    position: relative;
+    /* left: 680px;  */
+    right: 30px;
+    top: 30px;
+}
+
+div.goods_detail7,div.goods_detail8,div.goods_detail9{
+    width: 170px;
+    border: 2px solid red;
+    padding: 12px;
+    display: inline-block;
+    position: relative;
+    bottom: 70px;
+    left: 800px;
+}
+
+div.footer_contact_me{
+    width: 1600px;
+    margin:0 auto;
+    text-align: center;
+    border: 1px solid blue;
+}
+
+h1.slogan2{
+    border:1px solid orangered;
+    padding: 18px;
+    font-size: 35px;
+    text-align: center;
+}
+
+ul.follow_ig{
+    /* border: 8px solid purple;  */
+    font-size: 26px;
+    text-align: center;
+    position: relative;
+    left: 460px;
+    display: inline-block;
+    padding: 20px 10px;
+    /* min-width: 1200px; */
+    width: 1000px;
+    /* height: 100%; */
+    /* vertical-align: center; */
+    background-color: #DBC1A4;
+    /* margin-inline: 100px; */
+    /* margin: 0 auto;  */
+}
+
+
+div.social_link{
+    border: 10px solid red;
+    /* display: inline-block; */
+    /* margin-top: 100px; */
+    grid-template-columns: repeat(3,1fr);
+    /* display: grid; */
+    /* vertical-align: middle; */
+    /* margin: 0px -11px; */
+    /* margin: 10px; */
+    /* box-sizing: content-box; */
+    /* font-size: 0; */
+    /* padding-left: 290px; */
+
+}
+
+
+div.ig_group{
+    width: 760px;
+    margin: auto;
+}
+
+img.ig_picture1,img.ig_picture2,img.ig_picture3,img.ig_picture4,img.ig_picture5,img.ig_picture6,img.ig_picture7,img.ig_picture8,img.ig_picture9{
+    display: inline-block;
+    border: 1px solid purple;
+    width: 250px;
+    height: 250px;
+    padding: 15px; 
+    margin: auto;
+}
+
+
+footer.foot{
+    border: 1px solid lawngreen;
+    background-color: #eeded1;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: auto;
+    height: 200px;
+    line-height: 3;
+}
