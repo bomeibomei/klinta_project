@@ -1,5 +1,6 @@
-*{box-sizing: border-box;    
-    /* border: none !important; */
+*{
+  box-sizing: border-box;    
+    border: none !important;
     border: 1px solid blue;
 }  
   

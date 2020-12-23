@@ -2,7 +2,7 @@
 
 * {
     /* box-sizing: border-box; */
-    /* border: none !important; */
+    border: none !important;
     border: 1px solid blue;
     /* outline: 1px solid red; */
 }
@@ -199,7 +199,6 @@ div.goods_detail1, div.goods_detail2, div.goods_detail3, div.goods_detail4, div.
     align-items: center; 
     justify-content: space-around;
     font-size: 1rem;
-
 }
 
 div.img_goods1, div.img_goods2, div.img_goods3, div.img_goods4, div.img_goods5, div.img_goods6, div.img_goods7, div.img_goods8, div.img_goods9{
